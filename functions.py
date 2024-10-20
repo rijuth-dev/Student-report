@@ -72,10 +72,10 @@ def Connect():
     print()
     print()
     print('Connecting...')
-    connection = mysql.connector.connect(host='sql12.freesqldatabase.com',
-                                         user='sql12657166',
-                                         password='DnGqD6S7FK',
-                                         database='sql12657166')
+    connection = mysql.connector.connect(host='hostname',
+                                         user='username',
+                                         password='password',
+                                         database='databasename')
     Clear()
     if connection.is_connected():
       cursor = connection.cursor()
